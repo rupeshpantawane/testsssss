@@ -1,0 +1,29 @@
+{
+    "test": {
+        "SENDGRID_EMAIL_ID": "medxdev2022@gmail.com",
+        "BASE_URL": "http://localhost:8002",
+        "REQ_BASE_URL": "http://localhost:3000",
+        "IMAGE_RELATIVE_PATH": "storage/images",
+        "IMAGE_PATH": "http://localhost:8002/storage/images",
+        "PORT": 8002,
+        "ADMIN_BASE_URL": "http://admin.localhost/login"
+    },
+    "development": {
+        "SENDGRID_EMAIL_ID": "medxdev2022@gmail.com",
+        "BASE_URL": "http://localhost:8002",
+        "REQ_BASE_URL": "http://localhost",
+        "IMAGE_RELATIVE_PATH": "storage/images",
+        "IMAGE_PATH": "http://localhost:8002/storage/images",
+        "PORT": 8002,
+        "ADMIN_BASE_URL": "http://localhost/login"
+    },
+    "production": {
+        "SENDGRID_EMAIL_ID": "medxdev2022@gmail.com",
+        "BASE_URL": "http://localhost:8002",
+        "REQ_BASE_URL": "http://localhost",
+        "IMAGE_RELATIVE_PATH": "storage/images",
+        "IMAGE_PATH": "http://localhost:8002/storage/images",
+        "PORT": 1337,
+        "ADMIN_BASE_URL": "http://localhost/login"
+    }
+}
