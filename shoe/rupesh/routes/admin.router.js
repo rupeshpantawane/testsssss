@@ -17,6 +17,7 @@ const RolePermissionController = require("../controllers/admin/rolepermission.co
 const RoleController = require("../controllers/admin/role.controller");
 const EmployeeController = require("../controllers/admin/employee.controller");
 const ProfileController = require("../controllers/admin/profile.controller");
+const EmployeeforWebController = require("../controllers/admin/employeeforweb.controller");
 
 const SystemSetting = require("../controllers/admin/systemsetting.controller");
 
@@ -57,8 +58,18 @@ adminRouter.delete("/delete-emp/:emp_id", EmployeeController.deleteEmp);
 
 // End Employee
 
+// Start Employee
+adminRouter.post("/fetch-employee", EmployeeforWebController.fetchEmployeeWithPeginate);
+adminRouter.post("/create-employee", EmployeeforWebController.createEmployee);
+adminRouter.post("/fetch-employee/:employee_id", EmployeeforWebController.fetchEmployee);
+adminRouter.post("/update-employee", EmployeeforWebController.updateEmployee);
+adminRouter.post("/delete-employee/:employee_id", EmployeeforWebController.deleteEmployee);
+// End Employee
 ///adminRouter.post("/create-role", RoleModuleController.fetchRoleModule);
 
+
+
+///adminRouter.post("/create-role", RoleModuleController.fetchRoleModule);
 //profile controller
 adminRouter.post("/update-profile", ProfileController.updateProfile);
 adminRouter.post("/change-password", ProfileController.changePassword);
